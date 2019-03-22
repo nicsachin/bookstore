@@ -14,22 +14,23 @@ class Book
 
 class UI
 {
-    static displayBooks()
-    { const books = [{name:"the last key",
-                      author:"sachin",
-                      price:2000
-                    },
-                    { name:"spiderman",
-                      author:"sachin kumar",
-                      price:3000
+   // static displayBooks()
+    //{ 
+    //     const books = [{name:"the last key",
+    //                   author:"sachin",
+    //                   price:2000
+    //                 },
+    //                 { name:"spiderman",
+    //                   author:"sachin kumar",
+    //                   price:3000
 
-                    }
-                ];
+    //                 }
+    //             ];
         
-       books.forEach((data)=>{
-           UI.addBooksToList(data)
-       })            
-    }
+    //    books.forEach((data)=>{
+    //        UI.addBooksToList(data)
+    //    })            
+    //}
      static addBooksToList(book)
      {
          let place = document.querySelector('#list-item')
@@ -76,7 +77,7 @@ class UI
 
 ///////////////Event Listener////////////////////////
 
-document.addEventListener('DOMContentLoaded',UI.displayBooks())
+//document.addEventListener('DOMContentLoaded',UI.displayBooks())
 
 document.querySelector('#book-form').addEventListener('submit',(e)=>{
     e.preventDefault();
