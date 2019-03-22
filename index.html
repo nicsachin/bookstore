@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  
+    <style>
+      *
+      {
+        font-family: 'Open Sans', sans-serif;
+      }
+    </style>
+</head>
+<body>
+<div class="jumbotron text-center">
+     <i class="fas fa-book"></i><h1>Book Store</h1>
+   
+</div>
+<div class="container">
+    <form action="" id = "book-form">
+        <div class="form-group">
+                <label for="bookname">BookName</label>
+                <input type="text" class="form-control" id="book-name">
+        </div>
+        <div class="form-group">
+                <label for="bookname">BookAuthor</label>
+                <input type="text" class="form-control" id="book-author">
+        </div>
+        <div class="form-group">
+                <label for="bookname">BookPrice</label>
+                <input type="text" class="form-control" id="book-price">
+        </div>
+        <div class="form-group">
+                <input type="submit" class="form-control btn-success" value="add">
+        </div>
+    </form>
+      <div>
+          <table class="table">
+                 <thead>
+                <tr>
+                    <th>
+                       BookName 
+                    </th>
+                    <th>
+                        BookAuthor
+                    </th>
+                    <th>
+                        BookPrice
+                    </th>
+                    <th></th>
+                </tr>
+                </thead> 
+                  <tbody id="list-item">
+
+                  </tbody>       
+          </table>
+      </div>
+</div>
+
+</body>
+<script src="app.js">
+</script>
+</html>
